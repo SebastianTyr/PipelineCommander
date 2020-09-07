@@ -25,6 +25,8 @@ namespace PipelineCommanderForms
             _pipeline.Commands.Add("Out-String");
 
             Collection<PSObject> _results = _pipeline.Invoke();
+            _runspace.Close();
+
             StringBuilder _output = new StringBuilder();
 
             foreach(PSObject _object in _results)
