@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# manifest config
+src/PipelineCommanderForms/app.manifest
+app.manifest
