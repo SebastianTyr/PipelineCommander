@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Execute.cs" />
+    <Compile Include="Interfaces\IExecutable.cs" />
     <Compile Include="Views\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,7 +67,7 @@
     <Compile Include="Views\SysInfoView.Designer.cs">
       <DependentUpon>SysInfoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="libs\PipelineCommands.cs" />
+    <Compile Include="Controllers\PipelineCommands.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemProperites.cs" />

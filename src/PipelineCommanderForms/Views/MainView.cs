@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using PipelineCommanderForms;
+using PipelineCommanderForms.libs;
 
 namespace PipelineCommanderForms
 {
@@ -27,7 +28,7 @@ namespace PipelineCommanderForms
             try
             {
                 outputCommand.Clear();
-                outputCommand.Text = _commands.ExecuteScript(inputCommand.Text);
+                outputCommand.Text = new Execute().ExecuteCommand(inputCommand.Text);
             }
             catch (CommandNotFoundException)
             {
