@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
+using PipelineCommanderForms;
 
 namespace PipelineCommanderForms
 {
-    public partial class Form1 : Form
+    public partial class MainView : Form
     {
         PipelineCommands _commands = new PipelineCommands();
 
-        public Form1()
+        public MainView()
         {
             InitializeComponent();
         }
@@ -32,6 +33,17 @@ namespace PipelineCommanderForms
             {
                 outputCommand.Text = $@"{inputCommand.Text} : The term '{inputCommand.Text}' is not recognized as the name of a cmdlet, function, script file, or operable program. Checkthe spelling of the name, or if a path was included, verify that the path is correct and try again.";
             }
+        }
+
+        private void buttonSerialNumber_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{_commands.GetSerialNumber()}", "System Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void systemInfoButton_Click(object sender, EventArgs e)
+        {
+            SysInfoView f = new SysInfoView();
+            f.Show();
         }
     }
 }
