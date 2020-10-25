@@ -11,6 +11,7 @@ using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using PipelineCommanderForms;
 using PipelineCommanderForms.libs;
+using PipelineCommanderForms.Views;
 
 namespace PipelineCommanderForms
 {
@@ -45,6 +46,11 @@ namespace PipelineCommanderForms
         {
             SysInfoView f = new SysInfoView();
             f.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutView().Show();
         }
     }
 }

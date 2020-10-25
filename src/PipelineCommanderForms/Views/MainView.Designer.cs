@@ -45,6 +45,7 @@
             this.labelCommand = new System.Windows.Forms.Label();
             this.executeCommand = new System.Windows.Forms.Button();
             this.inputCommand = new System.Windows.Forms.TextBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,6 +64,7 @@
             // 
             this.tabControl.Controls.Add(this.tabPageOS);
             this.tabControl.Controls.Add(this.tabPagePipeline);
+            this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Location = new System.Drawing.Point(12, 128);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -141,7 +143,7 @@
             this.groupBox1.Size = new System.Drawing.Size(336, 373);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "AD Info";
+            this.groupBox1.Text = "OS Info";
             // 
             // button6
             // 
@@ -149,7 +151,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(324, 63);
             this.button6.TabIndex = 5;
-            this.button6.Text = "AD Info";
+            this.button6.Text = "Computer Management";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // systemInfoButton
@@ -233,6 +235,16 @@
             this.inputCommand.Size = new System.Drawing.Size(575, 22);
             this.inputCommand.TabIndex = 0;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(773, 436);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "AD Info";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -269,8 +281,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -335,6 +348,7 @@
         private System.Windows.Forms.Label labelCommand;
         private System.Windows.Forms.Button executeCommand;
         private System.Windows.Forms.TextBox inputCommand;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 

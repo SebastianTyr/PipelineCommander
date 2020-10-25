@@ -9,5 +9,6 @@ namespace PipelineCommanderForms.libs
     public interface IExecutable
     {
         string ExecuteCommand(string command);
+        void ExecuteInfoButton();
     }
 }

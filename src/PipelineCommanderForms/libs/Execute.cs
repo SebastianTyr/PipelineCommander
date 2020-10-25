@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Management.Automation;
 using System.Collections.ObjectModel;
 using System.Management.Automation.Runspaces;
-
+using PipelineCommanderForms.Views;
 
 namespace PipelineCommanderForms.libs
 {
@@ -15,7 +15,7 @@ namespace PipelineCommanderForms.libs
         ///<summary>
         ///Executting single cmdlet command
         ///</summary>
-        ///
+        ///<returns></returns>
         public string ExecuteCommand(string command)
         {
             Runspace _runspace = RunspaceFactory.CreateRunspace();
@@ -37,6 +37,16 @@ namespace PipelineCommanderForms.libs
             }
 
             return _output.ToString();
+        }
+
+        ///<summary>
+        ///Executting system information command
+        ///</summary>
+        ///<returns></returns>
+        public void ExecuteInfoButton()
+        {
+            SysInfoView sysInfoView = new SysInfoView();
+            InfoResultView infoResult = new InfoResultView();
         }
     }
 }
