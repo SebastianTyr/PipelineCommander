@@ -38,15 +38,5 @@ namespace PipelineCommanderForms.libs
 
             return _output.ToString();
         }
-
-        ///<summary>
-        ///Executting system information command
-        ///</summary>
-        ///<returns></returns>
-        public void ExecuteInfoButton()
-        {
-            SysInfoView sysInfoView = new SysInfoView();
-            InfoResultView infoResult = new InfoResultView();
-        }
     }
 }

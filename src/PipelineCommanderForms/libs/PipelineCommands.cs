@@ -27,7 +27,7 @@ namespace PipelineCommanderForms
             {
                 foreach(PropertyData _serialnumber in obj.Properties)
                 {
-                    _serialProperty =  string.Join(" ", "Product serial number: ", _serialnumber.Value);
+                    _serialProperty =  string.Join(" ", "Serial number: ", _serialnumber.Value);
                 }
             }
             _search.Dispose();
@@ -50,7 +50,7 @@ namespace PipelineCommanderForms
             {
                 foreach(PropertyData _model in obj.Properties)
                 {
-                    _modelProperty = string.Join(" ", "Product model: ", _model.Value);
+                    _modelProperty = string.Join(" ", "Model: ", _model.Value);
                 }
             }
             _search.Dispose();
@@ -73,7 +73,7 @@ namespace PipelineCommanderForms
             {
                 foreach (PropertyData _name in obj.Properties)
                 {
-                    _nameProperty = string.Join(" ", "Product model: ", _name.Value);
+                    _nameProperty = string.Join(" ", "Name: ", _name.Value);
                 }
             }
             _search.Dispose();
@@ -96,7 +96,7 @@ namespace PipelineCommanderForms
             {
                 foreach (PropertyData _manufacturer in obj.Properties)
                 {
-                    _manufacturerProperty = string.Join(" ", "Product model: ", _manufacturer.Value);
+                    _manufacturerProperty = string.Join(" ", "Manufacturer: ", _manufacturer.Value);
                 }
             }
             _search.Dispose();
@@ -119,7 +119,7 @@ namespace PipelineCommanderForms
             {
                 foreach (PropertyData _inbstallDate in obj.Properties)
                 {
-                    _installdateProperty = Convert.ToDateTime(string.Join(" ", "Product model: ", _inbstallDate.Value));
+                    _installdateProperty = Convert.ToDateTime(string.Join(" ", "Install date: ", _inbstallDate.Value));
                 }
             }
             _search.Dispose();
@@ -142,7 +142,7 @@ namespace PipelineCommanderForms
             {
                 foreach (PropertyData _status in obj.Properties)
                 {
-                    _statusproperty = string.Join(" ", "Product serial number: ", _status.Value);
+                    _statusproperty = string.Join(" ", "Status: ", _status.Value);
                 }
             }
             _search.Dispose();
@@ -165,7 +165,7 @@ namespace PipelineCommanderForms
             {
                 foreach (PropertyData _releasedate in obj.Properties)
                 {
-                    _releasedateProperty = Convert.ToDateTime(string.Join(" ", "Product model: ", _releasedate.Value));
+                    _releasedateProperty = Convert.ToDateTime(string.Join(" ", "Release date: ", _releasedate.Value));
                 }
             }
             _search.Dispose();
@@ -188,7 +188,7 @@ namespace PipelineCommanderForms
             {
                 foreach (PropertyData _status in obj.Properties)
                 {
-                    _statusproperty = string.Join(" ", "Product serial number: ", _status.Value);
+                    _statusproperty = string.Join(" ", "BIOS Version: ", _status.Value);
                 }
             }
             _search.Dispose();

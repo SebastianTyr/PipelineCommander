@@ -80,6 +80,7 @@
             this.buttonExecute.TabIndex = 41;
             this.buttonExecute.Text = "Execute";
             this.buttonExecute.UseVisualStyleBackColor = true;
+            this.buttonExecute.Click += new System.EventHandler(this.buttonExecute_Click);
             // 
             // checkBoxStatus
             // 

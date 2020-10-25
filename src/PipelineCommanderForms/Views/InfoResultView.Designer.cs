@@ -28,213 +28,189 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.labelCurrLang = new System.Windows.Forms.Label();
+            this.labelDesc = new System.Windows.Forms.Label();
+            this.labelIDCode = new System.Windows.Forms.Label();
+            this.labelinstallLang = new System.Windows.Forms.Label();
+            this.labelLangEdition = new System.Windows.Forms.Label();
+            this.labelLangList = new System.Windows.Forms.Label();
+            this.labelSN = new System.Windows.Forms.Label();
+            this.labelManuf = new System.Windows.Forms.Label();
+            this.labelModel = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelReleaseDT = new System.Windows.Forms.Label();
+            this.labelBIOSVer = new System.Windows.Forms.Label();
+            this.labelinstallDT = new System.Windows.Forms.Label();
+            this.labelVer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelCurrLang
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bios Characteristics:";
+            this.labelCurrLang.AutoSize = true;
+            this.labelCurrLang.Location = new System.Drawing.Point(31, 39);
+            this.labelCurrLang.Name = "labelCurrLang";
+            this.labelCurrLang.Size = new System.Drawing.Size(127, 17);
+            this.labelCurrLang.TabIndex = 1;
+            this.labelCurrLang.Text = "Current Language:";
             // 
-            // label2
+            // labelDesc
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Current Language:";
+            this.labelDesc.AutoSize = true;
+            this.labelDesc.Location = new System.Drawing.Point(31, 79);
+            this.labelDesc.Name = "labelDesc";
+            this.labelDesc.Size = new System.Drawing.Size(83, 17);
+            this.labelDesc.TabIndex = 2;
+            this.labelDesc.Text = "Description:";
             // 
-            // label3
+            // labelIDCode
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Description:";
+            this.labelIDCode.AutoSize = true;
+            this.labelIDCode.Location = new System.Drawing.Point(31, 123);
+            this.labelIDCode.Name = "labelIDCode";
+            this.labelIDCode.Size = new System.Drawing.Size(128, 17);
+            this.labelIDCode.TabIndex = 3;
+            this.labelIDCode.Text = "Identification Code:";
             // 
-            // label4
+            // labelinstallLang
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 164);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Identification Code:";
+            this.labelinstallLang.AutoSize = true;
+            this.labelinstallLang.Location = new System.Drawing.Point(31, 164);
+            this.labelinstallLang.Name = "labelinstallLang";
+            this.labelinstallLang.Size = new System.Drawing.Size(157, 17);
+            this.labelinstallLang.TabIndex = 4;
+            this.labelinstallLang.Text = "Install label Languages:";
             // 
-            // label5
+            // labelLangEdition
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 203);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Install label Languages:";
+            this.labelLangEdition.AutoSize = true;
+            this.labelLangEdition.Location = new System.Drawing.Point(31, 203);
+            this.labelLangEdition.Name = "labelLangEdition";
+            this.labelLangEdition.Size = new System.Drawing.Size(123, 17);
+            this.labelLangEdition.TabIndex = 5;
+            this.labelLangEdition.Text = "Language Edition:";
             // 
-            // label6
+            // labelLangList
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 245);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Language Edition:";
+            this.labelLangList.AutoSize = true;
+            this.labelLangList.Location = new System.Drawing.Point(31, 245);
+            this.labelLangList.Name = "labelLangList";
+            this.labelLangList.Size = new System.Drawing.Size(128, 17);
+            this.labelLangList.TabIndex = 6;
+            this.labelLangList.Text = "List Of Languages:";
             // 
-            // label7
+            // labelSN
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 287);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "List Of Languages:";
+            this.labelSN.AutoSize = true;
+            this.labelSN.Location = new System.Drawing.Point(31, 287);
+            this.labelSN.Name = "labelSN";
+            this.labelSN.Size = new System.Drawing.Size(102, 17);
+            this.labelSN.TabIndex = 7;
+            this.labelSN.Text = "Serial Number:";
             // 
-            // label8
+            // labelManuf
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 329);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Serial Number:";
+            this.labelManuf.AutoSize = true;
+            this.labelManuf.Location = new System.Drawing.Point(451, 39);
+            this.labelManuf.Name = "labelManuf";
+            this.labelManuf.Size = new System.Drawing.Size(96, 17);
+            this.labelManuf.TabIndex = 8;
+            this.labelManuf.Text = "Manufacturer:";
             // 
-            // label9
+            // labelModel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(451, 39);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 17);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Manufacturer:";
+            this.labelModel.AutoSize = true;
+            this.labelModel.Location = new System.Drawing.Point(451, 79);
+            this.labelModel.Name = "labelModel";
+            this.labelModel.Size = new System.Drawing.Size(50, 17);
+            this.labelModel.TabIndex = 9;
+            this.labelModel.Text = "Model:";
             // 
-            // label10
+            // labelName
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(451, 79);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 17);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Model:";
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(451, 123);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(49, 17);
+            this.labelName.TabIndex = 10;
+            this.labelName.Text = "Name:";
             // 
-            // label11
+            // labelReleaseDT
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(451, 123);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 17);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Name:";
+            this.labelReleaseDT.AutoSize = true;
+            this.labelReleaseDT.Location = new System.Drawing.Point(451, 164);
+            this.labelReleaseDT.Name = "labelReleaseDT";
+            this.labelReleaseDT.Size = new System.Drawing.Size(98, 17);
+            this.labelReleaseDT.TabIndex = 11;
+            this.labelReleaseDT.Text = "Release Date:";
             // 
-            // label12
+            // labelBIOSVer
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(451, 164);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 17);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Release Date:";
+            this.labelBIOSVer.AutoSize = true;
+            this.labelBIOSVer.Location = new System.Drawing.Point(451, 203);
+            this.labelBIOSVer.Name = "labelBIOSVer";
+            this.labelBIOSVer.Size = new System.Drawing.Size(96, 17);
+            this.labelBIOSVer.TabIndex = 12;
+            this.labelBIOSVer.Text = "BIOS Version:";
             // 
-            // label13
+            // labelinstallDT
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(451, 203);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 17);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "BIOS Version:";
+            this.labelinstallDT.AutoSize = true;
+            this.labelinstallDT.Location = new System.Drawing.Point(451, 245);
+            this.labelinstallDT.Name = "labelinstallDT";
+            this.labelinstallDT.Size = new System.Drawing.Size(82, 17);
+            this.labelinstallDT.TabIndex = 13;
+            this.labelinstallDT.Text = "Install Date:";
             // 
-            // label14
+            // labelVer
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(451, 245);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 17);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Install Date:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(451, 287);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 17);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "Version:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(451, 329);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(171, 17);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Target Operating System:";
+            this.labelVer.AutoSize = true;
+            this.labelVer.Location = new System.Drawing.Point(451, 287);
+            this.labelVer.Name = "labelVer";
+            this.labelVer.Size = new System.Drawing.Size(60, 17);
+            this.labelVer.TabIndex = 14;
+            this.labelVer.Text = "Version:";
             // 
             // InfoResultView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 383);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelVer);
+            this.Controls.Add(this.labelinstallDT);
+            this.Controls.Add(this.labelBIOSVer);
+            this.Controls.Add(this.labelReleaseDT);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.labelModel);
+            this.Controls.Add(this.labelManuf);
+            this.Controls.Add(this.labelSN);
+            this.Controls.Add(this.labelLangList);
+            this.Controls.Add(this.labelLangEdition);
+            this.Controls.Add(this.labelinstallLang);
+            this.Controls.Add(this.labelIDCode);
+            this.Controls.Add(this.labelDesc);
+            this.Controls.Add(this.labelCurrLang);
             this.Name = "InfoResultView";
             this.Text = "System Information";
+            this.Load += new System.EventHandler(this.InfoResultView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label labelCurrLang;
+        private System.Windows.Forms.Label labelDesc;
+        private System.Windows.Forms.Label labelIDCode;
+        private System.Windows.Forms.Label labelinstallLang;
+        private System.Windows.Forms.Label labelLangEdition;
+        private System.Windows.Forms.Label labelLangList;
+        private System.Windows.Forms.Label labelSN;
+        private System.Windows.Forms.Label labelManuf;
+        private System.Windows.Forms.Label labelModel;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelReleaseDT;
+        private System.Windows.Forms.Label labelBIOSVer;
+        private System.Windows.Forms.Label labelinstallDT;
+        private System.Windows.Forms.Label labelVer;
     }
 }

@@ -15,6 +15,29 @@ namespace PipelineCommanderForms.Views
         public InfoResultView()
         {
             InitializeComponent();
+            HiddenLables();
+        }
+
+        private void InfoResultView_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void HiddenLables()
+        {
+            labelBIOSVer.Visible = false;
+            labelCurrLang.Visible = false;
+            labelDesc.Visible = false;
+            labelIDCode.Visible = false;
+            labelinstallDT.Visible = false;
+            labelinstallLang.Visible = false;
+            labelLangEdition.Visible = false;
+            labelLangList.Visible = false;
+            labelManuf.Visible = false;
+            labelModel.Visible = false;
+            labelName.Visible = false;
+            labelReleaseDT.Visible = false;
+            labelSN.Visible = false;
+            labelVer.Visible = false;
         }
     }
 }

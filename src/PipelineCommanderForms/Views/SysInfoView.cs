@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PipelineCommanderForms.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,29 +13,36 @@ namespace PipelineCommanderForms
 {
     public partial class SysInfoView : Form
     {
-        //private static SysInfoView sysInfoView = null;
-        //private delegate void EnableDelegate(bool enable);
+        PipelineCommands _commands = new PipelineCommands();
+        public static string CurrLang = "";
+        public static string Description = "";
+        public static string IDCode = "";
+        public static string LabelLang = "";
+        public static string LangEdition = "";
+        public static string LangList = "";
+        public static string SN = "";
+        public static string Manufacturer = "";
+        public static string Model = "";
+        public static string NName = "";
+        public static string ReleaseDT = "";
+        public static string BIOSVersion = "";
+        public static string InstallDT = "";
+        public static string Version = "";
+
         public SysInfoView()
         {
             InitializeComponent();
-            //sysInfoView = this;
         }
 
-        //public static void EnableStaticSCheckbox(bool enable)
-        //{
-        //    if (sysInfoView != null)
-        //        sysInfoView.EnableCheckbox(enable);
+        private void buttonExecute_Click(object sender, EventArgs e)
+        {
+            if (checkBoxSN.Checked)
+            {
+                SN = _commands.GetSerialNumber();
+            }
 
-        //}
-
-        //private void EnableCheckbox(bool enable)
-        //{
-        //    if (InvokeRequired)
-        //    {
-        //        this.Invoke(new EnableDelegate(EnableCheckbox), new object[] { enable });
-        //    }
-
-        //    checkBoxBIOSVer.Enabled = enable;
-        //}
+            InfoResultView resultView = new InfoResultView();
+            resultView.Show();
+        }
     }
 }
