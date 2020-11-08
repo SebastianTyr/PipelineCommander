@@ -41,7 +41,7 @@
             this.labelReleaseDT = new System.Windows.Forms.Label();
             this.labelBIOSVer = new System.Windows.Forms.Label();
             this.labelinstallDT = new System.Windows.Forms.Label();
-            this.labelVer = new System.Windows.Forms.Label();
+            this.labelStat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelCurrLang
@@ -161,21 +161,21 @@
             this.labelinstallDT.TabIndex = 13;
             this.labelinstallDT.Text = "Install Date:";
             // 
-            // labelVer
+            // labelStat
             // 
-            this.labelVer.AutoSize = true;
-            this.labelVer.Location = new System.Drawing.Point(451, 287);
-            this.labelVer.Name = "labelVer";
-            this.labelVer.Size = new System.Drawing.Size(60, 17);
-            this.labelVer.TabIndex = 14;
-            this.labelVer.Text = "Version:";
+            this.labelStat.AutoSize = true;
+            this.labelStat.Location = new System.Drawing.Point(451, 287);
+            this.labelStat.Name = "labelStat";
+            this.labelStat.Size = new System.Drawing.Size(52, 17);
+            this.labelStat.TabIndex = 14;
+            this.labelStat.Text = "Status:";
             // 
             // InfoResultView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 383);
-            this.Controls.Add(this.labelVer);
+            this.Controls.Add(this.labelStat);
             this.Controls.Add(this.labelinstallDT);
             this.Controls.Add(this.labelBIOSVer);
             this.Controls.Add(this.labelReleaseDT);
@@ -211,6 +211,6 @@
         private System.Windows.Forms.Label labelReleaseDT;
         private System.Windows.Forms.Label labelBIOSVer;
         private System.Windows.Forms.Label labelinstallDT;
-        private System.Windows.Forms.Label labelVer;
+        private System.Windows.Forms.Label labelStat;
     }
 }

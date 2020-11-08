@@ -13,7 +13,7 @@ namespace PipelineCommanderForms
     public class PipelineCommands
     {
         /// <summary>
-        /// Getting device Serial Number
+        /// Get device Serial Number
         /// </summary>
         /// <returns></returns>
         public string GetSerialNumber()
@@ -36,7 +36,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting device Model
+        /// Get device Model
         /// </summary>
         /// <returns></returns>
         public string GetModel()
@@ -59,7 +59,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting device Name
+        /// Get device Name
         /// </summary>
         /// <returns></returns>
         public string GetName()
@@ -82,7 +82,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting Manufacturer
+        /// Get Manufacturer
         /// </summary>
         /// <returns></returns>
         public string GetManufacturer()
@@ -105,7 +105,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting system install date
+        /// Get system install date
         /// </summary>
         /// <returns></returns>
         public DateTime GetInstallDate()
@@ -128,7 +128,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting status
+        /// Get status
         /// </summary>
         /// <returns></returns>
         public string GetStatus()
@@ -151,7 +151,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting bios release date
+        /// Get bios release date
         /// </summary>
         /// <returns></returns>
         public DateTime GetReleaseDate()
@@ -174,7 +174,7 @@ namespace PipelineCommanderForms
         }
 
         /// <summary>
-        /// Getting bios version
+        /// Get bios version
         /// </summary>
         /// <returns></returns>
         public string GetBIOSVersion()
@@ -186,14 +186,152 @@ namespace PipelineCommanderForms
 
             foreach (ManagementObject obj in _statusInfo)
             {
-                foreach (PropertyData _status in obj.Properties)
+                foreach (PropertyData _biosVer in obj.Properties)
                 {
-                    _statusproperty = string.Join(" ", "BIOS Version: ", _status.Value);
+                    _statusproperty = string.Join(" ", "BIOS Version: ", _biosVer.Value);
                 }
             }
             _search.Dispose();
 
             return _statusproperty;
+        }
+
+        /// <summary>
+        /// Get information about current used language
+        /// </summary>
+        /// <returns></returns>
+        public string GetCurrentLang()
+        {
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select CurrentLanguage from Win32_BIOS");
+
+            ManagementObjectCollection _currLang = _search.Get();
+            string _currLangProperty = "";
+
+            foreach (ManagementObject obj in _currLang)
+            {
+                foreach (PropertyData _lang in obj.Properties)
+                {
+                    _currLangProperty = string.Join(" ", "Current Language: ", _lang.Value);
+                }
+            }
+            _search.Dispose();
+
+            return _currLangProperty;
+        }
+
+        /// <summary>
+        /// Get device description
+        /// </summary>
+        /// <returns></returns>
+        public string GetDescription()
+        {
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select CurrentLanguage from Win32_BIOS");
+
+            ManagementObjectCollection _descr = _search.Get();
+            string _descrProperty = "";
+
+            foreach (ManagementObject obj in _descr)
+            {
+                foreach (PropertyData _description in obj.Properties)
+                {
+                    _descrProperty = string.Join(" ", "Device Description: ", _description.Value);
+                }
+            }
+            _search.Dispose();
+
+            return _descrProperty;
+        }
+
+        /// <summary>
+        /// Get device identification code
+        /// </summary>
+        /// <returns></returns>
+        public string GetIDCode()
+        {
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select CurrentLanguage from Win32_BIOS");
+
+            ManagementObjectCollection _idCode = _search.Get();
+            string _idcodeProperty = "";
+
+            foreach (ManagementObject obj in _idCode)
+            {
+                foreach (PropertyData _code in obj.Properties)
+                {
+                    _idcodeProperty = string.Join(" ", "Identification Code: ", _code.Value);
+                }
+            }
+            _search.Dispose();
+
+            return _idcodeProperty;
+        }
+
+        /// <summary>
+        /// Get actual label language
+        /// </summary>
+        /// <returns></returns>
+        public UInt16 GetLabelLang()
+        {
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select CurrentLanguage from Win32_BIOS");
+
+            ManagementObjectCollection _labelLang = _search.Get();
+            UInt16 _labelLangProperty = 0;
+
+            foreach (ManagementObject obj in _labelLang)
+            {
+                foreach (PropertyData _labellang in obj.Properties)
+                {
+                    _labelLangProperty = Convert.ToUInt16(string.Join(" ", "Identification Code: ", _labellang.Value));
+                }
+            }
+            _search.Dispose();
+
+            return _labelLangProperty;
+        }
+
+        /// <summary>
+        /// Get language edition
+        /// </summary>
+        /// <returns></returns>
+        public string GetLangEdition()
+        {
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select LanguageEdition from Win32_BIOS");
+
+            ManagementObjectCollection _langEdition = _search.Get();
+            string _langEditionProperty = "";
+
+            foreach (ManagementObject obj in _langEdition)
+            {
+                foreach (PropertyData _langEdit in obj.Properties)
+                {
+                    _langEditionProperty = string.Join(" ", "Language Edition: ", _langEdit.Value);
+                }
+            }
+            _search.Dispose();
+
+            return _langEditionProperty;
+        }
+
+        /// <summary>
+        /// Get language list
+        /// </summary>
+        /// <returns></returns>
+        public string[] GetLangList()
+        {
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select ListOfLanguages from Win32_BIOS");
+
+            ManagementObjectCollection _langList = _search.Get();
+            string[] _langListProperty = null;
+
+            foreach (ManagementObject obj in _langList)
+            {
+                foreach (PropertyData _langs in obj.Properties)
+                {
+                    _langListProperty = string.Join(" ", "Device Languages: ", _langs.Value).ToCharArray().Select(x => x.ToString()).ToArray();
+                }
+            }
+            _search.Dispose();
+
+            return _langListProperty;
         }
     }
 }
