@@ -37,7 +37,7 @@
             this.checkBoxName = new System.Windows.Forms.CheckBox();
             this.checkBoxModel = new System.Windows.Forms.CheckBox();
             this.checkBoxManufacturer = new System.Windows.Forms.CheckBox();
-            this.checkBoxLangLists = new System.Windows.Forms.CheckBox();
+            this.checkBoxCaption = new System.Windows.Forms.CheckBox();
             this.checkBoxLangEdition = new System.Windows.Forms.CheckBox();
             this.checkBoxlabelLanguage = new System.Windows.Forms.CheckBox();
             this.checkBoxInstallDT = new System.Windows.Forms.CheckBox();
@@ -58,7 +58,7 @@
             this.groupBox1.Controls.Add(this.checkBoxName);
             this.groupBox1.Controls.Add(this.checkBoxModel);
             this.groupBox1.Controls.Add(this.checkBoxManufacturer);
-            this.groupBox1.Controls.Add(this.checkBoxLangLists);
+            this.groupBox1.Controls.Add(this.checkBoxCaption);
             this.groupBox1.Controls.Add(this.checkBoxLangEdition);
             this.groupBox1.Controls.Add(this.checkBoxlabelLanguage);
             this.groupBox1.Controls.Add(this.checkBoxInstallDT);
@@ -152,15 +152,15 @@
             this.checkBoxManufacturer.Text = "Manufacturer";
             this.checkBoxManufacturer.UseVisualStyleBackColor = true;
             // 
-            // checkBoxLangLists
+            // checkBoxCaption
             // 
-            this.checkBoxLangLists.AutoSize = true;
-            this.checkBoxLangLists.Location = new System.Drawing.Point(16, 167);
-            this.checkBoxLangLists.Name = "checkBoxLangLists";
-            this.checkBoxLangLists.Size = new System.Drawing.Size(146, 21);
-            this.checkBoxLangLists.TabIndex = 25;
-            this.checkBoxLangLists.Text = "List Of Languages";
-            this.checkBoxLangLists.UseVisualStyleBackColor = true;
+            this.checkBoxCaption.AutoSize = true;
+            this.checkBoxCaption.Location = new System.Drawing.Point(16, 167);
+            this.checkBoxCaption.Name = "checkBoxCaption";
+            this.checkBoxCaption.Size = new System.Drawing.Size(78, 21);
+            this.checkBoxCaption.TabIndex = 25;
+            this.checkBoxCaption.Text = "Caption";
+            this.checkBoxCaption.UseVisualStyleBackColor = true;
             // 
             // checkBoxLangEdition
             // 
@@ -246,7 +246,7 @@
         private System.Windows.Forms.CheckBox checkBoxName;
         private System.Windows.Forms.CheckBox checkBoxModel;
         private System.Windows.Forms.CheckBox checkBoxManufacturer;
-        private System.Windows.Forms.CheckBox checkBoxLangLists;
+        private System.Windows.Forms.CheckBox checkBoxCaption;
         private System.Windows.Forms.CheckBox checkBoxLangEdition;
         private System.Windows.Forms.CheckBox checkBoxlabelLanguage;
         private System.Windows.Forms.CheckBox checkBoxInstallDT;

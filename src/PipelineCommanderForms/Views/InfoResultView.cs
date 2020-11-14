@@ -32,7 +32,7 @@ namespace PipelineCommanderForms.Views
             labelinstallDT.Visible = false;
             labelinstallLang.Visible = false;
             labelLangEdition.Visible = false;
-            labelLangList.Visible = false;
+            labelCaption.Visible = false;
             labelManuf.Visible = false;
             labelModel.Visible = false;
             labelName.Visible = false;
@@ -69,9 +69,9 @@ namespace PipelineCommanderForms.Views
             labelLangEdition.Text = SysInfoView.LangEdition;
             labelLangEdition.Visible = true;
 
-            string[] langlist = SysInfoView.LangList;
-            labelLangList.Text = langlist.ToString();
-            labelLangList.Visible = true;
+            string caption = SysInfoView.Caption;
+            labelCaption.Text = caption.ToString();
+            labelCaption.Visible = true;
 
             labelManuf.Text = SysInfoView.Manufacturer;
             labelManuf.Visible = true;

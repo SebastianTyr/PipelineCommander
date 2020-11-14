@@ -19,7 +19,7 @@ namespace PipelineCommanderForms
         public static string IDCode = "";
         public static UInt16 LabelLang = 0;
         public static string LangEdition = "";
-        public static string[] LangList;
+        public static string Caption = "";
         public static string SN = "";
         public static string Manufacturer = "";
         public static string Model = "";
@@ -61,8 +61,8 @@ namespace PipelineCommanderForms
                 LabelLang = _commands.GetLabelLang();
             else if (checkBoxLangEdition.Checked)
                 LangEdition = _commands.GetLangEdition();
-            else if (checkBoxLangLists.Checked)
-                LangList = _commands.GetLangList();
+            else if (checkBoxCaption.Checked)
+                Caption = _commands.GetCaption();
             else if (checkBoxManufacturer.Checked)
                 Manufacturer = _commands.GetManufacturer();
             else if (checkBoxModel.Checked)
@@ -73,8 +73,6 @@ namespace PipelineCommanderForms
                 ReleaseDT = _commands.GetReleaseDate();
             else if (checkBoxStatus.Checked)
                 Status = _commands.GetStatus();
-                
-
         }
     }
 }

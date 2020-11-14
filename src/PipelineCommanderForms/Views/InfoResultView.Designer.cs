@@ -33,7 +33,7 @@
             this.labelIDCode = new System.Windows.Forms.Label();
             this.labelinstallLang = new System.Windows.Forms.Label();
             this.labelLangEdition = new System.Windows.Forms.Label();
-            this.labelLangList = new System.Windows.Forms.Label();
+            this.labelCaption = new System.Windows.Forms.Label();
             this.labelSN = new System.Windows.Forms.Label();
             this.labelManuf = new System.Windows.Forms.Label();
             this.labelModel = new System.Windows.Forms.Label();
@@ -89,14 +89,14 @@
             this.labelLangEdition.TabIndex = 5;
             this.labelLangEdition.Text = "Language Edition:";
             // 
-            // labelLangList
+            // labelCaption
             // 
-            this.labelLangList.AutoSize = true;
-            this.labelLangList.Location = new System.Drawing.Point(31, 245);
-            this.labelLangList.Name = "labelLangList";
-            this.labelLangList.Size = new System.Drawing.Size(128, 17);
-            this.labelLangList.TabIndex = 6;
-            this.labelLangList.Text = "List Of Languages:";
+            this.labelCaption.AutoSize = true;
+            this.labelCaption.Location = new System.Drawing.Point(31, 245);
+            this.labelCaption.Name = "labelCaption";
+            this.labelCaption.Size = new System.Drawing.Size(56, 17);
+            this.labelCaption.TabIndex = 6;
+            this.labelCaption.Text = "Caption";
             // 
             // labelSN
             // 
@@ -183,7 +183,7 @@
             this.Controls.Add(this.labelModel);
             this.Controls.Add(this.labelManuf);
             this.Controls.Add(this.labelSN);
-            this.Controls.Add(this.labelLangList);
+            this.Controls.Add(this.labelCaption);
             this.Controls.Add(this.labelLangEdition);
             this.Controls.Add(this.labelinstallLang);
             this.Controls.Add(this.labelIDCode);
@@ -203,7 +203,7 @@
         private System.Windows.Forms.Label labelIDCode;
         private System.Windows.Forms.Label labelinstallLang;
         private System.Windows.Forms.Label labelLangEdition;
-        private System.Windows.Forms.Label labelLangList;
+        private System.Windows.Forms.Label labelCaption;
         private System.Windows.Forms.Label labelSN;
         private System.Windows.Forms.Label labelManuf;
         private System.Windows.Forms.Label labelModel;

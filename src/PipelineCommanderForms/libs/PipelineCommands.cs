@@ -315,23 +315,23 @@ namespace PipelineCommanderForms
         /// Get language list
         /// </summary>
         /// <returns></returns>
-        public string[] GetLangList()
+        public string GetCaption()
         {
-            ManagementObjectSearcher _search = new ManagementObjectSearcher("select ListOfLanguages from Win32_BIOS");
+            ManagementObjectSearcher _search = new ManagementObjectSearcher("select Caption from Win32_BaseBoard");
 
-            ManagementObjectCollection _langList = _search.Get();
-            string[] _langListProperty = null;
+            ManagementObjectCollection _caption = _search.Get();
+            string _captionPoperty = "";
 
-            foreach (ManagementObject obj in _langList)
+            foreach (ManagementObject obj in _caption)
             {
-                foreach (PropertyData _langs in obj.Properties)
+                foreach (PropertyData _cap in obj.Properties)
                 {
-                    _langListProperty = string.Join(" ", "Device Languages: ", _langs.Value).ToCharArray().Select(x => x.ToString()).ToArray();
+                    _captionPoperty = string.Join(" ", "Language Edition: ", _cap.Value);
                 }
             }
             _search.Dispose();
 
-            return _langListProperty;
+            return _captionPoperty;
         }
     }
 }
