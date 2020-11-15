@@ -44,8 +44,8 @@ namespace PipelineCommanderForms
 
         private void systemInfoButton_Click(object sender, EventArgs e)
         {
-            SysInfoView f = new SysInfoView();
-            f.Show();
+            InfoResultView resultView = new InfoResultView();
+            resultView.Show();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)

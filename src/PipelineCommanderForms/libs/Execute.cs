@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Management.Automation;
 using System.Collections.ObjectModel;
 using System.Management.Automation.Runspaces;
-using PipelineCommanderForms.Views;
+using PipelineCommanderForms.Interfaces;
 
 namespace PipelineCommanderForms.libs
 {
